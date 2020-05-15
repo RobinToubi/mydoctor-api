@@ -1,0 +1,1 @@
+const Intervention = require("../models/Intervention");
