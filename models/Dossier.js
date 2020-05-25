@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const DossierSchema = new mongoose.Schema({
     nom: { type: String, required: true },
     prenom: { type:String, required: true },
-    birthDate: { type: Date, required: true },
+    birthDate: { type: Date, default: Date.now() },
     mobilePhone: { type: Number, default: 0 },
     profession: { type: String, default:"" },
     height: {type: Number, default: "" },

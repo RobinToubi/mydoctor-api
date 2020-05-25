@@ -25,12 +25,12 @@ const MONGO_URL = "mongodb://localhost:27017/mydoctor";
 app.use(helmet());
 
 // Limitation des requêtes effectuées
-app.use(
-  rateLimit({
-    windowMs: 1000 * 60 * 15, // 15 minutes
-    max: 1000 // 100 requests/15min
-  })
-);
+// app.use(
+//   rateLimit({
+//     windowMs: 1000 * 60 * 15, // 15 minutes
+//     max: 1000 // 100 requests/15min
+//   })
+// );
 
 // MIDDLEWARES
 app.use(morgan("dev"));

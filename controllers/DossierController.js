@@ -19,7 +19,7 @@ class DossierController {
     // GET : by ID
     static getDossierById(req,res) {
         Dossier.findById({
-            _id: req.dossierId
+            _id: req.params.dossierId
         })
         .then(dossier => {
             if (!dossier) 

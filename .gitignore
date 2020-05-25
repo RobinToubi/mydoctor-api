@@ -108,4 +108,7 @@ dist/
 tmp/
 temp/
 
+# VSCODE configuration directories
+.vscode/
+
 # End of https://www.gitignore.io/api/node

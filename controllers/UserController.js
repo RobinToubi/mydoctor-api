@@ -1,7 +1,7 @@
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
-const JWT_KEY = "jesuisbatman";
+const JWT_KEY = "erngeondvdovndoer";
 
 class UserController {
   static register(req, res) {
@@ -60,7 +60,7 @@ class UserController {
     )
   }
 
-  static getUnvrifiedUsers(req,res) {
+  static getUnverifiedUsers(req,res) {
     User.find({
       isVerified: 0
     }).exec((err,users) => {
